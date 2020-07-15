@@ -17,5 +17,5 @@ jobs:
           build/virtualenv/bin/python train.py
 
           # Write your CML report
-          cat results.txt >> report.md
+          cat metrics.txt >> report.md
           cml-send-comment report.md
