@@ -12,7 +12,8 @@ jobs:
         run: |
 
           # Your ML workflow goes here
-          python train.py
+          make virtualenv
+          build/virtualenv/bin/python train.py
 
           # Write your CML report
           cat results.txt >> report.md
