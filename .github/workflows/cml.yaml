@@ -11,7 +11,7 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
         run: |
 
-          apt-get update -y && apt-get install virtualenv
+          apt-get update -y && apt-get install virtualenv -y
           # Your ML workflow goes here
           make virtualenv
           build/virtualenv/bin/python train.py
